@@ -9,8 +9,6 @@ This lab demonstrates stack-based buffer overflow vulnerabilities on a 32-bit Li
 - 32-bit Linux VM (lab environment)
 - gcc (with ability to set Exec stack)
 - Python 3
-- sudo access for lab setup commands
-- Knowledge of basic debugging and exploitation techniques
 
 ---
 
@@ -18,16 +16,15 @@ This lab demonstrates stack-based buffer overflow vulnerabilities on a 32-bit Li
 - `stack.c` — vulnerable program used in the lab
 - `exploit2.py` — Python exploit used to generate `badfile`
 - `brute_force.sh` — brute-force script used to defeat ASLR
-- Evidence images: `Task 1.1.png`, `Task 1.2.png`, `Task 1.3.png`, `Task 2.1.png`, `Task 2.2.png`, `Task 2.3.png`, `Task 3.1.png`, `Task 3.2.png`
+- Image references (images are stored in the `images/` folder): `Task 1.1.png`, `Task 1.2.png`, `Task 1.3.png`, `Task 2.1.png`, `Task 2.2.png`, `Task 2.3.png`, `Task 3.1.png`, `Task 3.2.png`
 
 ---
 
 ## Task 1 — Basic Buffer Overflow
-**Objective:** Edit `exploit.py` to successfully execute a buffer overflow attack.
+**Objective:** Exploit a vulnerable program to execute arbitrary code.
 
-**Changes made to `exploit.py`:**
-- Adjusted buffer size to match the vulnerability in `stack.c`.
-- Determined correct return address offset via debugging.
+**Exploit approach:**
+- Determined the correct return address offset via debugging.
 - Placed shellcode at an appropriate position in the payload.
 - Configured a NOP sled to improve reliability.
 
@@ -42,10 +39,10 @@ Shellcode placed starting at index: 100
 Returned Properly
 ```
 
-**Evidence images:**
-- `Task 1.1.png`: Generated badfile with shellcode
-- `Task 1.2.png`: Compiled vulnerable program
-- `Task 1.3.png`: Program execution
+**Image references:**
+- `images/Task 1.1.png`: Generated badfile with shellcode
+- `images/Task 1.2.png`: Compiled vulnerable program
+- `images/Task 1.3.png`: Program execution
 
 ---
 
@@ -62,10 +59,10 @@ Returned Properly
 # Root shell obtained
 ```
 
-**Evidence images:**
-- `Task 2.1.png`: Setuid configuration
-- `Task 2.2.png`: Executing setuid binary
-- `Task 2.3.png`: Privilege verification
+**Image references:**
+- `images/Task 2.1.png`: Setuid configuration
+- `images/Task 2.2.png`: Executing setuid binary
+- `images/Task 2.3.png`: Privilege verification
 
 ---
 
@@ -86,9 +83,9 @@ Attempt: 2
 # Successful exploitation after multiple attempts
 ```
 
-**Evidence images:**
-- `Task 3.1.png`: Brute force script
-- `Task 3.2.png`: Complete ASLR bypass workflow
+**Image references:**
+- `images/Task 3.1.png`: Brute force script
+- `images/Task 3.2.png`: Complete ASLR bypass workflow
 
 ---
 
@@ -110,19 +107,8 @@ int foo(char *str) {
 
 ---
 
-## Safety and Ethics
-This repository and lab work were conducted in an isolated lab environment for educational purposes only. The techniques demonstrated are potentially dangerous if used without authorization. Do **not** apply these techniques against systems you do not own or have explicit permission to test.
-
----
-
-## Notes & Recommendations
-- Where possible, use safer exploitation mitigation demonstrations (e.g., controlled simulations or emulators).
-- For writing reports, include runtime details (OS version, gcc version) and a step-by-step debugging log if needed by evaluators.
-
----
-
 ## Author
-Prepared by: seed (lab VM) — Lab date: October 1, 2025
+Prepared by: Abdulrahman ALQunaibit — Lab date: October 1, 2025
 
 ---
 

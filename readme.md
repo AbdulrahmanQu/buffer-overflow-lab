@@ -64,59 +64,11 @@ Setuid configuration (privilege escalation)
 Brute force script (ASLR defeat)
 
 ![Task 3.1](images/Task%203.1.png)
-
----
-
-## Task 2 — Privilege Escalation
-
-**Objective:** Obtain a root shell using a setuid-root binary (lab-controlled scenario).
-
-**Method:** Configure the vulnerable binary as setuid-root to obtain elevated privileges for the lab demonstration.
-
-**Example terminal output:**
-
-```bash
-[10/01/25]seed@VM:~/Desktop$ chown root stack
-[10/01/25]seed@VM:~/Desktop$ chmod 4755 stack
-[10/01/25]seed@VM:~/Desktop$ ./stack
-# Root shell obtained
-```
-
-**Image references:**
-
-* ![Task 2.1](images/Task%202.1.png)
-* ![Task 2.2](images/Task%202.2.png)
-* ![Task 2.3](images/Task%202.3.png)
-
----
-
-## Task 3 — ASLR Defeat
-
-**Objective:** Bypass Address Space Layout Randomization (ASLR) by using a brute-force approach.
-
-**Method:** Enable ASLR and run a brute-force script that repeatedly attempts exploitation until success.
-
-**Example terminal output:**
-
-```bash
-[10/01/25]seed@VM:~/Desktop$ /sbin/sysctl -w kernel.randomize_va_space=2
-kernel.randomize_va_space = 2
-[10/01/25]seed@VM:~/Desktop$ ./brute_force.sh
-Starting brute-force attack... Press Ctrl+C to stop.
-Attempt: 1
-Attempt: 2
-...
-# Successful exploitation after multiple attempts
-```
-
-**Image references:**
-
-* ![Task 3.1](images/Task%203.1.png)
-* ![Task 3.2](images/Task%203.2.png)
-* ![Task 3.3](images/Task%203.3.png)
-* ![Task 3.4](images/Task%203.4.png)
-* ![Task 3.5](images/Task%203.5.png)
-* ![Task 3.6](images/Task%203.6.png)
+![Task 3.2](images/Task%203.2.png)
+![Task 3.3](images/Task%203.3.png)
+![Task 3.4](images/Task%203.4.png)
+![Task 3.5](images/Task%203.5.png)
+![Task 3.6](images/Task%203.6.png)
 
 ---
 

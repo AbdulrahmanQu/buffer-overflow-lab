@@ -24,7 +24,6 @@ This lab demonstrates stack-based buffer overflow vulnerabilities on a 32-bit Li
 * `stack.c` — vulnerable program used in the lab
 * `exploit2.py` — Python exploit used to generate `badfile`
 * `brute_force.sh` — brute-force script used to defeat ASLR
-* Image references (images are stored in the `images/` folder): `Task 1.1.png`, `Task 1.2.png`, `Task 1.3.png`, `Task 2.1.png`, `Task 2.2.png`, `Task 2.3.png`, `Task 3.1.png`, `Task 3.2.png`
 
 ---
 

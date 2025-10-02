@@ -36,6 +36,10 @@ This lab demonstrates stack-based buffer overflow vulnerabilities on a 32-bit Li
 **Example terminal output:**
 
 ```bash
+[10/01/25]seed@VM:~/Desktop$ pwd
+/home/seed/Desktop
+[10/01/25]seed@VM:~/Desktop$ ls
+exploit2.py  exploit.py  stack.c
 [10/01/25]seed@VM:~/Desktop$ python3 exploit2.py
 Generated 'badfile' of length 504 bytes.
 Return Address (RET) set to: 0xbffffd00 (Little Endian)
@@ -43,6 +47,8 @@ Shellcode placed starting at index: 100
 [10/01/25]seed@VM:~/Desktop$ gcc -o stack -z execstack -fno-stack-protector stack.c
 [10/01/25]seed@VM:~/Desktop$ ./stack
 Returned Properly
+[10/01/25]seed@VM:~/Desktop$ id
+uid=1000(seed) gid=1000(seed) groups=1000(seed),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
 ```
 
 **Image references:**
@@ -65,6 +71,7 @@ Brute force script (ASLR defeat)
 
 ![Task 3.1](images/Task%203.1.png)
 ![Task 3.2](images/Task%203.2.png)
+
 
 ---
 

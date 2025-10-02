@@ -12,6 +12,13 @@ This lab demonstrates stack-based buffer overflow vulnerabilities on a 32-bit Li
 * gcc (with ability to set Exec stack)
 * Python 3
 
+**Useful lab resources / downloads:**
+
+* SEED Ubuntu 16.04 32-bit image:
+* [https://seed.nyc3.cdn.digitaloceanspaces.com/SEEDUbuntu-16.04-32bit.zip](https://seed.nyc3.cdn.digitaloceanspaces.com/SEEDUbuntu-16.04-32bit.zip)
+* [https://seedsecuritylabs.org/lab_env.html](https://seedsecuritylabs.org/lab_env.html)
+* [https://drive.google.com/file/d/12l8OO3PXHjUsf9vfjkAf7-I6bsixvMUa/view?usp=sharing](https://drive.google.com/file/d/12l8OO3PXHjUsf9vfjkAf7-I6bsixvMUa/view?usp=sharing)
+
 ---
 
 ## Repository / Files

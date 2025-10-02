@@ -47,9 +47,43 @@ Returned Properly
 
 **Image references:**
 
-* ![Task 1.1](images/Task%201.1.png)
-* ![Task 1.2](images/Task%201.2.png)
-* ![Task 1.3](images/Task%201.3.png)
+**Task 1**
+
+Generated badfile with shellcode
+
+![Task 1.1](images/Task%201.1.png)
+
+Compiled vulnerable program
+
+![Task 1.2](images/Task%201.2.png)
+
+Program execution
+
+![Task 1.3](images/Task%201.3.png)
+
+**Task 2**
+
+Setuid configuration
+
+![Task 2.1](images/Task%202.1.png)
+
+Executing setuid binary
+
+![Task 2.2](images/Task%202.2.png)
+
+Privilege verification
+
+![Task 2.3](images/Task%202.3.png)
+
+**Task 3**
+
+Brute force script
+
+![Task 3.1](images/Task%203.1.png)
+
+Complete ASLR bypass workflow
+
+![Task 3.2](images/Task%203.2.png)
 
 ---
 

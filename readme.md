@@ -75,6 +75,10 @@ Brute force script (ASLR defeat)
 
 ![Task 3.1](images/Task%203.1.png)
 ![Task 3.2](images/Task%203.2.png)
+![Task 3.3](images/Task%203.3.png)
+![Task 3.4](images/Task%203.4.png)
+![Task 3.5](images/Task%203.5.png)
+![Task 3.6](images/Task%203.6.png)
 
 
 ---
